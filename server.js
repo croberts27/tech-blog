@@ -6,6 +6,9 @@ const SequelizeStore = require("connect-session-sequelize")(session.Store);
 const expHandlebars = require("express-handlebars");
 const handlebars = expHandlebars.create({});
 
+require("dotenv").config();
+// console.log(process.env);
+
 const app = express();
 const PORT = process.env.PORT || 3001;
 

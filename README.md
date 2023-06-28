@@ -9,6 +9,7 @@ This project builds a CMS-style blog site similar to a Wordpress site, where dev
 - [Installation](#installation)
 - [Usage](#usage)
 - [Deployment](#deployment)
+- [GIF](#gif)
 - [Credits](#credits)
 
 ## Installation
@@ -26,7 +27,11 @@ This project builds a CMS-style blog site similar to a Wordpress site, where dev
 
 ## Deployment
 
-This app is deployed on Heroku: 
+This app is deployed on Heroku: https://tech-blog-app-01-ebab155aa60f.herokuapp.com/
+
+## GIF
+
+![Tech-Blog](/assets/Tech%20Blog.gif)
 
 ## Credits
 - Columbia Coding Bootcamp

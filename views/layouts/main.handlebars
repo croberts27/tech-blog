@@ -10,7 +10,7 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../../public/css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
 
   </head>
 
@@ -41,8 +41,6 @@
                 <li class="nav-item">
                   <a class="nav-link" href="/dashboard">Dashboard</a>
                 </li>
-
-                {{! need to add css }}
                 <li class="nav-item">
                   <button class="no-button" id="logout">Logout</button>
                 </li>
@@ -76,7 +74,7 @@
     ></script>
 
     {{#if logged_in}}
-      <script src="/public/js/logout.js"></script>
+      <script src="/js/logout.js"></script>
     {{/if}}
   </body>
 

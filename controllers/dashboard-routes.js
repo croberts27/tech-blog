@@ -3,7 +3,7 @@ const { User, Post, Comment } = require("../models");
 const withAuth = require("../utils/auth");
 const sequelize = require("../config/connection");
 
-// GET all User's posts
+// User's all posts ('/dashboard')
 router.get("/", withAuth, (req, res) => {
   Post.findAll({
     where: {
@@ -40,8 +40,8 @@ router.get("/", withAuth, (req, res) => {
     });
 });
 
-// Get one post to update ('dashboard/update/:id')
-router.get("/update/:id", withAuth, (req, res) => {
+// Get one post to edit ('dashboard/edit/:id')
+router.get("/edit/:id", withAuth, (req, res) => {
   Post.findOne({
     where: {
       id: req.params.id,
@@ -68,7 +68,7 @@ router.get("/update/:id", withAuth, (req, res) => {
         return;
       }
       const post = dbPostData.get({ plain: true });
-      res.render("update-post", {
+      res.render("edit-post", {
         post,
         loggedIn: true,
         username: req.session.username,
